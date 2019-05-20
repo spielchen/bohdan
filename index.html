@@ -31,7 +31,7 @@
 				</li>
 				
 				<!-- <li class="divider"></li> -->
-				<li class="chapter " data-path=""> <!-- // class="active" делает синию подсветку (криво работает) -->
+				<li class="chapter" data-path=""> <!-- // class="active" делает синию подсветку (криво работает) -->
 					<a href="/#home" onclick="openbox('home'); return false">Home</a>
 				<!-- <li class="divider"></li> -->
 				<li>
@@ -354,7 +354,8 @@
                   for (var i = 0; i < all.length; i++) {
                     if (all[i].id == id) {
                       all[i].style.display = (all[i].style.display == 'none')? 'block' : '';
-                     // menu.style.display = ("none");
+										    $('.with-summary').addClass('without-animation').removeClass('with-summary');
+                     //menu.style.display = ("none");
                     } else {
                       all[i].style.display = 'none';
                     }
